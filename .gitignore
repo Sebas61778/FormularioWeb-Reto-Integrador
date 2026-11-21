@@ -1,0 +1,33 @@
+# Visual Studio
+.vs/
+**/bin/
+**/obj/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Paquetes NuGet: se restauran desde packages.config al abrir la solución
+packages/
+**/packages/
+
+# Publicaciones y archivos de instalación
+publish/
+**/publish/
+*.publishsettings
+*.pubxml.user
+
+# Archivos locales o sensibles
+.env
+.env.*
+!.env.example
+secrets.json
+appsettings.Local.json
+*.mdf
+*.ldf
+*.bak
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+Desktop.ini

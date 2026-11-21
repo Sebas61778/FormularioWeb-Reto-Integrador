@@ -1,0 +1,9 @@
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup><Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration><Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform><ProjectGuid>{C89CBB91-97BB-4631-B985-237F26F12119}</ProjectGuid><OutputType>Library</OutputType><RootNamespace>FormularioWeb</RootNamespace><AssemblyName>FormularioWeb.Datos</AssemblyName><TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion><FileAlignment>512</FileAlignment></PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' "><OutputPath>bin\Debug\</OutputPath></PropertyGroup><PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' "><OutputPath>bin\Release\</OutputPath></PropertyGroup>
+  <ItemGroup><Reference Include="System"/><Reference Include="System.Core"/><Reference Include="System.Data"/><Reference Include="System.Configuration"/><Reference Include="System.Security"/></ItemGroup>
+  <ItemGroup><ProjectReference Include="..\Entidades\Entidades.csproj"><Project>{8B449A03-53F2-48AC-9738-5F9CD3F2D7A1}</Project><Name>Entidades</Name></ProjectReference></ItemGroup>
+  <ItemGroup><Compile Include="..\FormularioWeb\Data\ActividadRepository.cs"><Link>Repositories\ActividadRepository.cs</Link></Compile><Compile Include="..\FormularioWeb\Data\EstudianteRepository.cs"><Link>Repositories\EstudianteRepository.cs</Link></Compile><Compile Include="..\FormularioWeb\Data\PortalRepository.cs"><Link>Repositories\PortalRepository.cs</Link></Compile><Compile Include="..\FormularioWeb\Security\PasswordHasher.cs"><Link>Security\PasswordHasher.cs</Link></Compile></ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

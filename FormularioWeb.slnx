@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="FormularioWeb/FormularioWeb.csproj" Id="ca473335-a0c2-4ac8-af39-47652087cb0d" />
+  <Project Path="Entidades/Entidades.csproj" Id="8b449a03-53f2-48ac-9738-5f9cd3f2d7a1" />
+  <Project Path="Datos/Datos.csproj" Id="c89cbb91-97bb-4631-b985-237f26f12119" />
+  <Project Path="Negocio/Negocio.csproj" Id="a3f10d95-4570-452e-ac7b-6a6eb4996eb9" />
+</Solution>

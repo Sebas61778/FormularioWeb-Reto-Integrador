@@ -1,0 +1,8 @@
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup><Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration><Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform><ProjectGuid>{8B449A03-53F2-48AC-9738-5F9CD3F2D7A1}</ProjectGuid><OutputType>Library</OutputType><RootNamespace>FormularioWeb</RootNamespace><AssemblyName>FormularioWeb.Entidades</AssemblyName><TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion><FileAlignment>512</FileAlignment></PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' "><OutputPath>bin\Debug\</OutputPath></PropertyGroup><PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' "><OutputPath>bin\Release\</OutputPath></PropertyGroup>
+  <ItemGroup><Reference Include="System" /></ItemGroup>
+  <ItemGroup><Compile Include="..\FormularioWeb\Models\ActividadDto.cs"><Link>Models\ActividadDto.cs</Link></Compile><Compile Include="..\FormularioWeb\Models\EstudianteDto.cs"><Link>Models\EstudianteDto.cs</Link></Compile></ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
